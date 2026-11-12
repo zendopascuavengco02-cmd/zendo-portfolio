@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zendo's Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #F1F5F9;
+            color: #1E293B;
+        }
+
+        header {
+            background: #1E293B;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { color: #60A5FA; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: #60A5FA; }
+
+        .home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 10%;
+            background: #E2E8F0;
+        }
+
+        .home-content { max-width: 700px; }
+
+        .home h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span { color: #2563EB; }
+
+        .home h3 {
+            color: #2563EB;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563EB;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1E293B;
+            transform: translateY(-3px);
+        }
+
+        .section {
+            padding: 80px 10%;
+            min-height: 60vh;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #2563EB;
+            margin-bottom: 35px;
+        }
+
+        .content-box {
+            background: #FFFFFF;
+            padding: 30px;
+            border-radius: 12px;
+            line-height: 1.8;
+            border: 1px solid #CBD5E1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .content-box h3 {
+            color: #2563EB;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p { color: #475569; }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #FFFFFF;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #CBD5E1;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            border-color: #2563EB;
+            box-shadow: 0 5px 15px rgba(37,99,235,0.12);
+        }
+
+        .skill-box h3 {
+            color: #2563EB;
+            margin-bottom: 12px;
+        }
+
+        .skill-box p {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        pre {
+            background: #1E293B;
+            color: #BFDBFE;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin-top: 15px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1E293B;
+            color: #CBD5E1;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a { margin-left: 0; }
+            .home h1 { font-size: 30px; }
+            .skills-container { grid-template-columns: 1fr; }
+            .section { padding: 60px 6%; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">My Portfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#personal">Personal Info</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Code</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Zendo Pascua Vengco</span></h1>
+            <h3>BS Information Technology Student</h3>
+            <p>
+                Welcome to my personal portfolio website!
+                I am an aspiring programmer who wants to
+                improve my knowledge and skills in technology.
+                My goal is to become a successful IT
+                professional in the future.
+            </p>
+            <a href="#personal" class="btn">Explore My Portfolio</a>
+        </div>
+    </section>
+
+    <section id="personal" class="section">
+        <h2>Personal Information</h2>
+        <div class="content-box">
+            <p><b>Name:</b> Zendo Pascua Vengco</p>
+            <p><b>Course:</b> BS Information Technology</p>
+            <p><b>Section:</b> BSIT 1-C</p>
+            <p><b>Location:</b> Guimba, Nueva Ecija</p>
+
+            <h3>About Me</h3>
+            <p>
+                I am a first-year Information Technology student
+                who is interested in programming and computers.
+                I enjoy learning new things, solving problems,
+                and improving my technical skills. I believe
+                that hard work and dedication will help me
+                achieve my dreams.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Educational Background</h2>
+        <div class="content-box">
+            <h3>College</h3>
+            <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            <p>BS Information Technology - First Year</p>
+
+            <h3>Senior High School</h3>
+            <p>Macatcatuit High School</p>
+
+            <h3>Junior High School</h3>
+            <p>Macatcatuit Junior High School</p>
+
+            <h3>Elementary</h3>
+            <p>Macatcatuit Elementary School</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>HTML</h3>
+                <p>Basic knowledge of creating web pages.</p>
+            </div>
+            <div class="skill-box">
+                <h3>CSS</h3>
+                <p>Basic knowledge of styling websites.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Java Programming</h3>
+                <p>Learning variables, loops, conditions, and methods.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Problem Solving</h3>
+                <p>Ability to analyze problems and find solutions.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Communication</h3>
+                <p>Willingness to share ideas and work with others.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Chess</h3>
+                <p>Interested in strategy, critical thinking, and planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="java" class="section">
+        <h2>My Java Programming Project</h2>
+        <div class="content-box">
+            <h3>Daily Sugar Consumption Tracker</h3>
+            <p>
+                Store daily sugar consumption for 10 days in a double[]
+                array, accepting nonnegative values in grams. Calculate
+                total and average consumption. Count days when consumption
+                exceeded 50 grams. Display amounts in descending order.
+            </p>
+            <p><b>Programming Language:</b> Java</p>
+            <p><b>Subject:</b> CC102</p>
+            <p><b>Project Type:</b> Console-Based Application</p>
+
+            <h3>Java Source Code</h3>
+            <pre><code>/* VENGCO, ZENDO PASCUA.
+   BSIT 1-C */
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class SugarTracker {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Store sugar consumption for 10 days
+        double[] sugar = new double[10];
+
+        double total = 0;
+        double average;
+        int count = 0;
+
+        // Input sugar consumption for 10 days
+        for (int i = 0; i &lt; sugar.length; i++) {
+            System.out.print("Enter sugar consumption for Day "
+                    + (i + 1) + " in grams: ");
+
+            sugar[i] = input.nextDouble();
+
+            // Make sure the input is nonnegative
+            while (sugar[i] &lt; 0) {
+                System.out.println("Invalid input! Enter a nonnegative value.");
+                System.out.print("Enter sugar consumption for Day "
+                        + (i + 1) + " in grams: ");
+
+                sugar[i] = input.nextDouble();
+            }
+
+            // Calculate total consumption
+            total += sugar[i];
+
+            // Count days exceeding 50 grams
+            if (sugar[i] &gt; 50) {
+                count++;
+            }
+        }
+
+        // Calculate average consumption
+        average = total / sugar.length;
+
+        // Display total and average
+        System.out.println("\\n=== SUGAR CONSUMPTION REPORT ===");
+        System.out.printf("Total consumption: %.2f grams%n", total);
+        System.out.printf("Average consumption: %.2f grams%n", average);
+        System.out.println("Days exceeding 50 grams: " + count);
+
+        // Sort the array in ascending order
+        Arrays.sort(sugar);
+
+        // Display amounts in descending order
+        System.out.println("\\nSugar consumption in descending order:");
+
+        for (int i = sugar.length - 1; i &gt;= 0; i--) {
+            System.out.printf("%.2f grams%n", sugar[i]);
+        }
+
+        input.close();
+    }
+}</code></pre>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Zendo Pascua Vengco</p>
+        <p>BS Information Technology - BSIT 1-C</p>
+        <p>Personal Portfolio Website</p>
+    </footer>
+</body>
+</html>
